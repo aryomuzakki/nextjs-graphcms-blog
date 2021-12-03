@@ -1,29 +1,49 @@
-# Next.js + Tailwind CSS Example
+# Aryo's Blog
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This project is the result of learning Next.js, Tailwind CSS, GraphQL, and GraphCMS from youtube with the title [Build and Deploy THE BEST Modern Blog App with React | GraphQL, NextJS, Tailwind CSS](https://www.youtube.com/watch?v=HYv55DhgTuA) that was created by [Javascript Mastery](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A) Channel.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Demo
 
-## Preview
+---
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+https://nextjs-graphcms-blog-by-aryo.vercel.app
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Stack
 
-## Deploy your own
+---
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [GraphCMS](https://graphcms.com)
+- [GraphQL](https://graphql.org)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## How to Use 
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+---
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### 1. Clone repository then Install Dependencies
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- ```bash
+  git clone 
+  cd nextjs-graphcms-blog
+  npm instal # or use yarn 
+  cp .env.local.example .env.local 
+  ```
+
+### 2. Set GraphCMS Schema and API Endpoint and Key
+
+- Make a new account in GraphCMS (if you haven't made one).
+- Create new blank Project.
+- Create Schema, Model, and etc.
+- Get API endpoint and API Key, then add it to `.env.local` file.
+
+> See the [tutorial](https://www.youtube.com/watch?v=HYv55DhgTuA&t=467s) for reference on how to create new project in GraphCMS.
+
+### 3. Run Locally
+
+- Start the project with ` npm run dev ` then go to http://localhost:3000 
+
+---
+
+This project initialized using [Next.js + Tailwind CSS Example](https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss).
