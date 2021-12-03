@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Author, Categories, Comments, CommentsForm, PostDetail, PostWidget, LoadingTransition} from '../../components'
 import { getPostDetails, getPosts } from '../../services'
 
@@ -7,7 +7,7 @@ const PostDetails = ( { post }) => {
     const router = useRouter()
 
     if (router.isFallback)
-        return <LoadingTransition isLoading={true} useLoader={true} />
+        return <LoadingTransition isLoading={true} />
     
     return (
         <>

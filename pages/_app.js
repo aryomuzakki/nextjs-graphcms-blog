@@ -8,31 +8,24 @@ import 'tailwindcss/tailwind.css'
 import '../styles/global.scss'
 
 function MyApp({ Component, pageProps }) {
-  const [useLoader, setUseLoader] = useState(true)
   const [isLoading, setIsLoading] = useState(true)
   
   const router = useRouter()
   
   useEffect(() => {
     setIsLoading(true)
-    setUseLoader(true)
     
     setTimeout(() => {
-      setUseLoader(false)
       setIsLoading(false)
     }, 3000);
     
     const handleRouteChange = () => {
-      setIsLoading(true);
       NProgress.start();
       NProgress.inc(.25)
     }
     
     const handleRouteChangeComplete = () => {
-      setTimeout(() => {
-        NProgress.done(true)
-        setIsLoading(false)
-      }, 500);
+      NProgress.done(true)
     }
     
     const handleRouteChangeError = () => {
@@ -55,7 +48,7 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <>
-      <LoadingTransition isLoading={isLoading} useLoader={useLoader} />
+      <LoadingTransition isLoading={isLoading} />
       <Layout>
         <Component {...pageProps} />
       </Layout>
