@@ -4,13 +4,9 @@ This project is the result of learning Next.js, Tailwind CSS, GraphQL, and Graph
 
 ## Demo
 
----
-
 https://nextjs-graphcms-blog-by-aryo.vercel.app
 
 ## Stack
-
----
 
 - [Next.js](https://nextjs.org)
 - [Tailwind CSS](https://tailwindcss.com)
@@ -19,8 +15,6 @@ https://nextjs-graphcms-blog-by-aryo.vercel.app
 
 
 ## How to Use 
-
----
 
 ### 1. Clone repository then Install Dependencies
 
@@ -34,11 +28,11 @@ https://nextjs-graphcms-blog-by-aryo.vercel.app
 ### 2. Set GraphCMS Schema and API Endpoint and Key
 
 - Make a new account in GraphCMS (if you haven't made one).
-- Create new blank Project.
-- Create Schema, Model, and etc.
+- Create a new blank Project.
+- Create the Schema, Model, and etc.
 - Get API endpoint and API Key, then add it to `.env.local` file.
 
-> See the [tutorial](https://www.youtube.com/watch?v=HYv55DhgTuA&t=467s) for reference on how to create new project in GraphCMS.
+> See the [tutorial](https://www.youtube.com/watch?v=HYv55DhgTuA&t=467s) for reference on how to create a new project in GraphCMS.
 
 ### 3. Run Locally
 
