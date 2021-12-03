@@ -7,7 +7,7 @@ const PostDetails = ( { post }) => {
     const router = useRouter()
 
     if (router.isFallback)
-        return <LoadingTransition isLoading={true} />
+        return <LoadingTransition isLoading={true} useLoader={true} />
     
     return (
         <>
